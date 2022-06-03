@@ -5,6 +5,8 @@
 	<artifactId>light-coroutine-java-vertx</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
+	<packaging>pom</packaging>
+
 	<url>https://github.com/Xianguang-Zhou/light-coroutine-java-vertx</url>
 
 	<licenses>
@@ -33,11 +35,19 @@
 			<artifactId>light-coroutine-java</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
-
-		<dependency>
-			<groupId>io.vertx</groupId>
-			<artifactId>vertx-core</artifactId>
-			<version>4.3.1</version>
-		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.vertx</groupId>
+				<artifactId>vertx-core</artifactId>
+				<version>4.3.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<modules>
+		<module>light-coroutine-java-vertx-core</module>
+	</modules>
 </project>

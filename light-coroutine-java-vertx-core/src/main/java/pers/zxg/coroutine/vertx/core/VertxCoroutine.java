@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022, Xianguang Zhou <xianguang.zhou@outlook.com>. All rights reserved.
  */
-package pers.zxg.coroutine.vertx;
+package pers.zxg.coroutine.vertx.core;
 
 import java.util.concurrent.ExecutionException;
 

@@ -47,10 +47,6 @@ public class BufferStreamReader extends StreamReader<Buffer> {
 		throw new NotWeaved();
 	}
 
-	public Buffer readUntil(byte[] separator) throws Suspend, EOFException, ExecutionException, OutsideCall {
-		throw new NotWeaved();
-	}
-
 	public Buffer readUntil(Buffer separator) throws Suspend, EOFException, ExecutionException, OutsideCall {
 		throw new NotWeaved();
 	}
